@@ -28,4 +28,4 @@ app.listen(PORT, () => {
 	console.log(`API running on port ${PORT}`)
 })
 
-// JSON: curl -X POST -H "Content-Type: application/json" -d '{"answer":"sim"}' http://localhost:3000/api/answer
+// JSON: curl -X POST -H "Content-Type: application/json" -d '{"userResponse":"sim"}' http://localhost:3000/api/response
