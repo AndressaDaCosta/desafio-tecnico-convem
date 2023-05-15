@@ -1,6 +1,7 @@
 <div class="app-container">
 	<div class="container">
 		<img class="logo" src="../assets/logo-convem.svg" alt="" />
+
 		<h1 class="title">{{ titulo }}</h1>
 		<label class="label" for="resposta">Sua resposta:</label>
 		<input
@@ -12,5 +13,32 @@
 		/>
 		<button class="button" (click)="enviarResposta()">Confirmar</button>
 		<p class="message" *ngIf="mensagem">{{ mensagem }}</p>
+		<footer class="footer">
+			<p>Desenvolvido por Andressa Da Costa</p>
+			<a
+				href="https://github.com/AndressaDaCosta/"
+				target="_blank"
+				title="github"
+				rel="noopener"
+			>
+				<img src="../assets/github.svg" alt="github-logo" />
+			</a>
+			<a
+				href="https://www.linkedin.com/in/andressa-da-costa"
+				target="_blank"
+				title="linkedin"
+				rel="noopener"
+			>
+				<img src="../assets/linkedin.svg" alt="linkedin-logo" />
+			</a>
+			<a
+				href="mailto:andressadacostan@gmail.com"
+				target="_blank"
+				title="email"
+				rel="noopener"
+			>
+				<img src="../assets/email.png" alt="email-logo" />
+			</a>
+		</footer>
 	</div>
 </div>
