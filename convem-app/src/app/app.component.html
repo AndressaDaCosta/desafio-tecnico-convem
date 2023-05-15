@@ -1,9 +1,16 @@
-<div class="container">
-	<!-- <img src="../assets/logo-convem.svg" alt=""> -->
-	<h1>{{ titulo }}</h1>
-	<label for="resposta">Sua resposta:</label>
-	<input type="text" id="resposta" placeholder="sim" [(ngModel)]="resposta" />
-	<button (click)="enviarResposta()">Confirmar</button>
-	<p *ngIf="mensagem">{{ mensagem }}</p>
-	<!-- <p>{{ mensagem$ | async }}</p> -->
+<div class="app-container">
+	<div class="container">
+		<img class="logo" src="../assets/logo-convem.svg" alt="" />
+		<h1 class="title">{{ titulo }}</h1>
+		<label class="label" for="resposta">Sua resposta:</label>
+		<input
+			type="text"
+			id="resposta"
+			placeholder="sim"
+			[(ngModel)]="resposta"
+			class="input"
+		/>
+		<button class="button" (click)="enviarResposta()">Confirmar</button>
+		<p class="message" *ngIf="mensagem">{{ mensagem }}</p>
+	</div>
 </div>
