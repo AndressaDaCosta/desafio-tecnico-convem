@@ -1,9 +1,9 @@
-/*  1 - Desenvolver uma API em Noje.js do zero?
-    2- Instalação de pacotes: 
+/*  1 - Desenvolver uma API em Noje.js do zero? ✅
+    2- Instalação de pacotes: ✅
         - Express: para criar um servidor HTTP.
         - Body-parser: para interpretar o corpo das requisições recebidas pelo servidor.
 
-    3- Integrar com a aplicação em Angular.
+    3- Integrar com a aplicação em Angular. ⏳
 */
 
 const express = require('express')
@@ -15,9 +15,9 @@ const PORT = process.env.PORT || 3000
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
-app.post('/api/response', (req, res) => {
-	const userResponse = req.body.userResponse.toLowerCase()
-	if (userResponse === 'sim') {
+app.post('/api/resposta', (req, res) => {
+	const resposta = req.body.resposta
+	if (resposta.toLowerCase() === 'sim') {
 		res.status(200).send('Successo')
 	} else {
 		res.status(400).send('Erro')
