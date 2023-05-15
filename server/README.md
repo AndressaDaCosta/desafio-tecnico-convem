@@ -8,3 +8,13 @@
     -   🟥 Em caso de sucesso, exiba na tela o texto "Você está mais próximo de se juntar ao time!". Exiba "Erro" em qualquer outro caso.
 
 -   ⏳ Prazo para entrega é sexta-feira 19 de maio de 2023.
+
+Como usar este projeto:
+
+-   npm install em ambas as pastas
+
+API
+Vá para API na pasta server em seu cmd e execute node index.js, navegue até http://localhost:3000/api/respostas/ para ver os valores da api.
+
+Site
+Vá para FinTech em seu cmd e execute ng serve para executar o servidor de desenvolvimento, navegue até http://localhost:4200/ para ver o site.
