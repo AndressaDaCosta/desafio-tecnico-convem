@@ -20,7 +20,7 @@ Como usar este projeto:
 -   npm install em ambas as pastas
 
 API
-Vá para API na pasta server em seu cmd e execute node index.js, navegue até http://localhost:3000/api/respostas/ para ver os valores da api.
+Vá para API na pasta server em seu cmd e execute node index.js
 
 Site
 Vá para FinTech em seu cmd e execute ng serve para executar o servidor de desenvolvimento, navegue até http://localhost:4200/ para ver o site.
