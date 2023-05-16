@@ -9,18 +9,20 @@
 
 -   ⏳ Prazo para entrega é sexta-feira 19 de maio de 2023.
 
-1- Desenvolver uma API em Noje.js do zero? ✅
-2- Instalação de pacotes: ✅ - Express: para criar um servidor HTTP. - Body-parser: para interpretar o corpo das requisições recebidas pelo servidor.
-3- Integrar com a aplicação em Angular. ✅
+-   Desenvolver uma API em Noje.js do zero? ✅
+-   Instalação de pacotes: ✅ - Express: para criar um servidor HTTP. - Body-parser: para interpretar o corpo das requisições recebidas pelo servidor.
+-   Integrar com a aplicação em Angular. ✅
 
 #
 
-Como usar este projeto:
+## Como usar este projeto:
 
--   npm install em ambas as pastas
+    - npm install em ambas as pastas
 
-API
-Vá para API na pasta server em seu cmd e execute node index.js
+### API
 
-Site
-Vá para FinTech em seu cmd e execute ng serve para executar o servidor de desenvolvimento, navegue até http://localhost:4200/ para ver o site.
+    - Vá na pasta SERVER em seu cmd e execute node index.js
+
+### Site
+
+    - Vá para a pasta CONVEM-APP em seu cmd e execute ng serve para executar o servidor de desenvolvimento, navegue até http://localhost:4200/ para ver o site.
