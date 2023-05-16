@@ -15,15 +15,30 @@
 
 #
 
-## Como usar este projeto:
+## Para usar este projeto, siga as etapas abaixo:
 
-### API
+#
 
-    - Vá na pasta SERVER em seu terminal instale os pacotes do projeto back-end com (npm install) e após a instalação, execute com (node index.js)
+### API:
 
-### Site
+    - Abra o seu terminal e navegue até a pasta "SERVER" do projeto.
+    - Execute o comando "npm install" para instalar as dependências do projeto back-end.
+    - Após a instalação das dependências, execute o comando "node index.js" para iniciar o servidor back-end.
 
-    - Vá para a pasta CONVEM-APP e em seu terminal instale os pacotes do projeto front-end com (npm install) e após a instalação execute (ng serve --live-reload) para executar o servidor de desenvolvimento, navegue até 🌎 http://localhost:4200/ para ver o site .
+#
 
--   Node version: v18.16.0
--   npm version: 9.5.1
+### Site:
+
+    - Abra o seu terminal e navegue até a pasta "CONVEM-APP" do projeto.
+    - Execute o comando "npm install" para instalar as dependências do projeto front-end.
+    - Após a instalação das dependências, execute o comando "npm start" para iniciar o servidor de desenvolvimento.
+    - Abra o seu navegador e acesse o seguinte endereço: http://localhost:4200 para visualizar o site.
+
+#
+
+### Certifique-se de ter as seguintes versões instaladas:
+
+    - Node: v18.16.0
+    - npm: 9.5.1
+
+Siga essas etapas e você poderá usar o projeto com sucesso. ✅
