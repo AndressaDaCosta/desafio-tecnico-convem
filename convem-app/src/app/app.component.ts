@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
 	selector: 'app-root',
@@ -27,17 +27,8 @@ export class AppComponent {
 						this.mensagem = 'Erro';
 					}
 				},
-				(error: HttpErrorResponse) => {
-					if (error.error instanceof ErrorEvent) {
-						// Erro do lado do cliente
-						console.error('Ocorreu um erro:', error.error.message);
-					} else {
-						// Erro do lado do servidor
-						console.error(
-							`Código do erro: ${error.status}, ` +
-								`mensagem: ${error.error}`
-						);
-					}
+				(error) => {
+					console.error(error);
 					this.mensagem = 'Erro';
 				}
 			);
