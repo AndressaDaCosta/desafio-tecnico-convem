@@ -17,12 +17,13 @@
 
 ## Como usar este projeto:
 
-    - npm install em ambas as pastas
-
 ### API
 
-    - Vá na pasta SERVER em seu cmd e execute node index.js
+    - Vá na pasta SERVER em seu terminal instale os pacotes do projeto back-end com (npm install) e após a instalação, execute com (node index.js)
 
 ### Site
 
-    - Vá para a pasta CONVEM-APP em seu cmd e execute ng serve para executar o servidor de desenvolvimento, navegue até http://localhost:4200/ para ver o site.
+    - Vá para a pasta CONVEM-APP e em seu terminal instale os pacotes do projeto front-end com (npm install) e após a instalação execute (ng serve --live-reload) para executar o servidor de desenvolvimento, navegue até 🌎 http://localhost:4200/ para ver o site .
+
+-   Node version: v18.16.0
+-   npm version: 9.5.1
