@@ -1,35 +1,39 @@
 <div class="app-container">
 	<div class="container">
-		<img class="logo" src="../assets/logo-convem.svg" alt="" />
+		<img
+			class="logo"
+			src="../assets/logo-convem.svg"
+			alt="logo com cesta de compras"
+		/>
 
 		<h1 class="title">{{ titulo }}</h1>
-		<label class="label" for="resposta">Sua resposta:</label>
+		<label class="answer" for="answer">Sua resposta:</label>
 		<input
 			type="text"
-			id="resposta"
+			id="answer"
 			placeholder="sim"
 			[(ngModel)]="resposta"
 			class="input"
 		/>
-		<button class="button" (click)="enviarResposta()">Confirmar</button>
+		<button class="btn" (click)="enviarResposta()">Confirmar</button>
 		<p class="message" *ngIf="mensagem">{{ mensagem }}</p>
 		<footer class="footer">
 			<p>Desenvolvido por Andressa Da Costa</p>
 			<a
 				href="https://github.com/AndressaDaCosta/"
 				target="_blank"
-				title="github"
+				title="github-link"
 				rel="noopener"
 			>
-				<img src="../assets/github.svg" alt="github-logo" />
+				<i class="fa-brands fa-github fa-xl"></i>
 			</a>
 			<a
 				href="https://www.linkedin.com/in/andressa-da-costa"
 				target="_blank"
-				title="linkedin"
+				title="linkedin-link"
 				rel="noopener"
 			>
-				<img src="../assets/linkedin.svg" alt="linkedin-logo" />
+				<i class="fa-brands fa-linkedin fa-xl"></i>
 			</a>
 			<a
 				href="mailto:andressadacostan@gmail.com"
@@ -37,7 +41,7 @@
 				title="email"
 				rel="noopener"
 			>
-				<img src="../assets/email.png" alt="email-logo" />
+				<i class="fa-solid fa-envelope fa-xl"></i>
 			</a>
 		</footer>
 	</div>
