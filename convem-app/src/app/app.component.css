@@ -3,10 +3,6 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-:focus {
-	outline: none;
-	box-shadow: 0 0 0 2px #7f3d98;
-}
 
 body {
 	-webkit-font-smoothing: antialiased;
@@ -70,6 +66,10 @@ button {
 .input::placeholder {
 	color: #7f3d98;
 }
+.input:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px #7f3d98;
+}
 
 .btn {
 	font-size: 1.25rem;
@@ -119,4 +119,5 @@ button {
 .fa-solid {
 	color: #7f3d98;
 	margin-left: 0.5rem;
+	outline: none;
 }
