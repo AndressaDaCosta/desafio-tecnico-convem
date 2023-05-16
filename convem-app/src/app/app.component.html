@@ -6,17 +6,17 @@
 			alt="logo com cesta de compras"
 		/>
 
-		<h1 class="title">{{ titulo }}</h1>
-		<label class="label" for="resposta">Sua resposta:</label>
+		<h1 class="title">{{ title }}</h1>
+		<label class="label" for="response">Sua resposta:</label>
 		<input
 			type="text"
-			id="resposta"
+			id="response"
 			placeholder="sim"
-			[(ngModel)]="resposta"
+			[(ngModel)]="decision"
 			class="input"
 		/>
-		<button class="btn" (click)="enviarResposta()">Confirmar</button>
-		<p class="message" *ngIf="mensagem">{{ mensagem }}</p>
+		<button class="btn" (click)="sendResponse()">Confirmar</button>
+		<p class="message" *ngIf="message">{{ message }}</p>
 		<footer class="footer">
 			<p>Desenvolvido por Andressa Da Costa</p>
 			<a

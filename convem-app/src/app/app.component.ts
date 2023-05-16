@@ -7,29 +7,29 @@ import { HttpClient } from '@angular/common/http';
 	styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-	titulo = 'Você quer se juntar ao time da Convem?';
-	resposta: string = '';
-	mensagem: string = '';
+	title = 'Você quer se juntar ao time da Convem?';
+	decision: string = '';
+	message: string = '';
 
 	constructor(private http: HttpClient) {}
 
-	enviarResposta() {
+	sendResponse() {
 		this.http
-			.post<any>('http://localhost:3000/api/resposta', {
-				resposta: this.resposta,
+			.post<any>('http://localhost:3000/api/decision', {
+				decision: this.decision,
 			})
 			.subscribe(
 				(response) => {
 					if (response === 'Sucesso') {
-						this.mensagem =
+						this.message =
 							'Você está mais próximo de se juntar ao time!';
 					} else {
-						this.mensagem = 'Erro';
+						this.message = 'Erro';
 					}
 				},
 				(error) => {
 					console.error(error);
-					this.mensagem = 'Erro';
+					this.message = 'Erro';
 				}
 			);
 	}
